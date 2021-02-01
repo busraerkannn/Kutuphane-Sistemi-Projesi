@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Kutuphane.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Tasarım.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 223px;
+            width: 1090px;
+            text-align: left;
+        }
+        .auto-style2 {
+            height: 50px;
+            width: 1090px;
+        }
+        .auto-style3 {
+            height: 29px;
+            float: left;
+            width: 690px;
+        }
+        .auto-style4 {
+            width: 100%;
+        }
+        .auto-style7 {
+            font-size: medium;
+            text-align: left;
+            height: 26px;
+            color:black;
+        }
+        .auto-style9 {
+            font-size: x-large;
+            text-align: center;
+            height: 31px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style1"; style="margin-left:200px; background-color:antiquewhite">
+            
+            <asp:Image ID="Image1" runat="server" Height="223px" ImageUrl="~/Resim/alfons-morales-YLSwjSy7stw-unsplash-e1571348625761-768x384.jpg" Width="1090px" />
+            
+        </div>
+        <div class="auto-style2"; style="margin-left:200px"></div>
+        <div style="height: 300px; margin-left:200px; float: left; width:300px; background-color:#FFFFFF">
+            <table class="auto-style4">
+                <tr>
+                    <td class="auto-style9" style="border: thin solid #800000"><strong style="color: #990000">MENÜ</strong></td>
+                </tr>
+                <tr>
+                    <td class="auto-style7" style="border: thin solid #800000"><a href="KitapEkleme.aspx">Kitap Ekle</a> </td>
+                </tr>
+                <tr>
+                    <td class="auto-style7" style="border: thin solid #800000;"><a href="KullaniciListeleme.aspx">Kullanıcı Listeleme</td>
+                </tr>
+                <tr>
+                    <td class="auto-style7" style="border: thin solid #800000"><a href="ZamanAtlama.aspx">Zaman Atlama</td>
+                </tr>
+                <tr>
+                    <td class="auto-style7" style="border: thin solid #800000"><a href="Giris.aspx"> Oturumu Kapat</td>
+                </tr>
+            </table>
+        </div>
+        <div style="margin-left:100px; background-color:#FFFFFF" class="auto-style3">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Giris.master.cs" Inherits="Kutuphane.Giris" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 223px;
+            width: 1090px;
+            text-align: left;
+        }
+        .auto-style2 {
+            height: 50px;
+            width: 1090px;
+        }
+        .auto-style3 {
+            height: 88px;
+            width: 1090px;
+            text-align: center;
+        }
+        .auto-style4 {
+            margin-bottom: 18px;
+        }
+        .auto-style5 {
+            /*font-size: xx-large;*/
+            font-family:Elephant;
+            font-size:50px;
+            color : #800003;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style1"; style="margin-left:200px; background-color:antiquewhite">
+            
+            <asp:Image ID="Image1" runat="server" Height="223px" ImageUrl="~/Resim/alfons-morales-YLSwjSy7stw-unsplash-e1571348625761-768x384.jpg" Width="1090px" CssClass="auto-style4" />
+            
+        </div>
+        <div class="auto-style3"; style="margin-left:200px">
+            <br />
+            <asp:Label ID="Label1" runat="server" CssClass="auto-style5" Text="KÜTÜPHANE SİSTEMİ"></asp:Label>
+        </div>
+        <div class="auto-style2"; style="margin-left:200px"></div>
+        <div style="height: 300px; margin-left:300px; float: left; width:300px; background-color:#FFFFFF">
+            <a href="AdminGiris.aspx"><img src="~/Resim/admin.png" alt="" /><asp:Image ID="Image3" runat="server" Height="300px" ImageUrl="~/Resim/admin.png" Width="300px"/></a>
+        </div>
+        <div style="height: 300px; margin-left:300px; float: left; width:300px; background-color:white">
+            <a href="KullaniciGiris.aspx"><img src="~/Resim/user.png" alt="" /><asp:Image ID="Image2" runat="server" Height="300px" ImageUrl="~/Resim/user.png" Width="300px"/></a>  
+        </div>  
+    </form>
+</body>
+</html>
+
+<%--<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div class="auto-style2">
+
+                </div>
+            </asp:ContentPlaceHolder>--%>
